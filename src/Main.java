@@ -13,7 +13,7 @@ public class Main {
         // Defining parameters for the algorithm
         int tabuListSize = 3; // Size of the tabu list
         int maxIteration = 10; // Maximum number of iterations
-        int choice = 1; // Initial choice: 1 for random job order,
+        int choice = 2; // Initial choice: 1 for random job order,
                         // otherwise reorder jobs so that the p-value of each job is increasing
 
         // Time management
