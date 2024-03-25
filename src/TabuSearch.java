@@ -20,8 +20,6 @@ public class TabuSearch {
         for (int iteration = 1; !stop; iteration++) {
             // Obtaining a new neighbor solution
             // As it is implemented, in N(x) we only find solutions different from x
-
-
             Neighbor newNeighbor = neighborhoodManager.obtainNewNeighbor(solutionManager, currentSolution, tabuList, iteration);
             // Updating the current solution
             currentSolution = newNeighbor.getSolution();
@@ -38,9 +36,7 @@ public class TabuSearch {
             // Checking if the stopping criterion is satisfied
             stop = isStopCriterionSatisfied(iteration, maxIteration);
         }
-
     }
-
     // Method to check if the stopping criterion is satisfied
     public boolean isStopCriterionSatisfied(int iteration, int maxIteration){
         // Stopping when the maximum number of iterations is reached
